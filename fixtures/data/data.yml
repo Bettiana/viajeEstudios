@@ -1,0 +1,29 @@
+Centro:
+  CodigoCentro{1..10}:
+  Nombre: "Centro{@} depuis les fixtures"
+  Localidad
+  Verificado
+    
+Usuario:
+  usuario{1..10}:
+    name: "Usuario {@} : {{nombre.apellidos}}"
+    centroId: @centro{@}
+    email: "{{internet.email}}"
+    birthDate: "2016-01-01"
+    favoriteNumber: "(function() { return Math.round(Math.random()*1000);})()"
+
+User:
+  user{1..10}:
+    name: "User {@} : {{name.lastName}}"
+    groupId: @group{@}
+    email: "{{internet.email}}"
+    birthDate: "2016-01-01"
+    favoriteNumber: "(function() { return Math.round(Math.random()*1000);})()"
+
+User:
+  user{1..10}:
+    name: "User {@} : {{name.lastName}}"
+    groupId: @group{@}
+    email: "{{internet.email}}"
+    birthDate: "2016-01-01"
+    favoriteNumber: "(function() { return Math.round(Math.random()*1000);})()"

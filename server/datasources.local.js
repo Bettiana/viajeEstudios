@@ -10,6 +10,23 @@ module.exports = {
     port: process.env.DB_PORT || 3306,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    database: 'viaje_estudios',
+    database: 'viajeEstudio',
+  },
+  myEmailDataSource: {
+    name: "myEmailDataSource",
+    connector: "mail",
+    transports: [{
+      type: "smtp",
+      host: "smtp.private.com",
+      secure: false,
+      port: 465,
+     
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD
+      }
+    }]
+
+        
   }
 };
