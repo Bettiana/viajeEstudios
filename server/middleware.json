@@ -33,12 +33,11 @@
   "session": {},
   "auth": {},
   "parse": {},
-  "routes": {
-    "loopback#rest": {
-      "paths": [
-        "${restApiRoot}"
-      ]
-    }
+  "routes:before": {
+  "loopback#favicon": {
+        "./middleware/miMiddleware":{}
+        }
+ 
   },
   "files": {},
   "final": {
